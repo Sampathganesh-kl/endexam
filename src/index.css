@@ -1,0 +1,151 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Header */
+header {
+  background-color: navy;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+nav a:hover {
+  background-color: orange;
+}
+
+/* Banner */
+.banner {
+  background-color: lightblue;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.banner h2 {
+  color: navy;
+  margin-bottom: 15px;
+}
+
+.banner p {
+  margin-bottom: 20px;
+}
+
+/* Main Container using Flexbox */
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Section Styling */
+.section {
+  background-color: white;
+  padding: 20px;
+  flex: 1;
+  min-width: 280px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.section h2 {
+  color: navy;
+  margin-bottom: 15px;
+}
+
+/* Courses Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: navy;
+  color: white;
+}
+
+/* Contact Form */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+button {
+  background-color: navy;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: orange;
+}
+
+/* Footer */
+footer {
+  background-color: navy;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 20px;
+  line-height: 1.8;
+}
+
+/* Mobile Responsive Design */
+@media screen and (max-width: 600px) {
+
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .section {
+    width: 100%;
+  }
+
+  .banner {
+    padding: 30px 10px;
+  }
+}
